@@ -693,6 +693,7 @@ input:focus,select:focus{
 
 ::placeholder{
     color: #888;
+    font-size: 1.8rem;
 }
 
 .form-submit{
