@@ -625,7 +625,7 @@ blockquote{
 
 /**************************************/
 /**************************************/
-/*Pricing Section */
+/*CTA Section */
 
 .section-cta{
     padding: 9.8rem 0 12.2rem;
@@ -676,7 +676,7 @@ label{
 input,select{
     width: 90%;
     padding: 1.8rem 1.8rem;
-    font-size:2rem;
+    font-size:1.8rem;
     border: none;
     border-radius: 15px;
     background-color: #f8d8bd;
