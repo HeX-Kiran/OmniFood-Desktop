@@ -1,0 +1,67 @@
+/* In media queries rem and em is not same as root size */
+/* 1 rem = 1em = 16px */
+
+
+/* *********************************************** */
+/* MEDIA QUERIES FOR 1350 PX */
+/* *********************************************** */
+@media (max-width:84em){
+    /* 84em = 1350px, 84* 16 = 1350 */
+   
+    .hero{
+        max-width: 120rem;
+        
+    }
+}
+
+/* *********************************************** */
+/* MEDIA QUERIES FOR 1200 PX 
+    TABLET LANDSCAPE
+*/
+/* *********************************************** */
+
+@media(max-width:75em){
+    html{
+        font-size: 56.25%;
+    }
+
+    .header{
+        padding-left:3.2rem;
+        padding-right: 3.2rem; 
+    }
+
+    .section-how,.featured-in,.section-meal,.section-testimonial,.section-pricing,.section-cta,footer{
+        padding-left:3.2rem;
+        padding-right: 3.2rem;
+    }
+
+    .primary-heading{
+        font-size: 4.4rem;
+         
+    }
+
+    .secondary-heading{
+        font-size: 3rem;
+    }
+
+    .teritory-heading{
+        font-size: 2rem;
+    }
+
+    .gallery-box{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .hero{
+        padding: 0;
+        margin: 5.2rem;
+    }
+}
+
+
+/*  FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+    /* line height(in px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+ */

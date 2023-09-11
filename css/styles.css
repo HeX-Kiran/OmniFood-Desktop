@@ -14,7 +14,7 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
-    column-gap: 2rem;
+    column-gap: 6.4rem;
     padding:0 2rem;
     
 }
@@ -61,7 +61,7 @@
     font-size: 1.8rem;
 }
 
-@media screen and (max-width:400px) {
+/* @media screen and (max-width:400px) {
     .hero{
         height: 100vh;
         margin: 0 auto;
@@ -72,7 +72,7 @@
         
         padding:0 2rem;
     }
-}
+} */
 
 /**************************************/
 
@@ -98,7 +98,7 @@ header img{
 .main-nav{
    
     display: flex;
-    gap: 4.6rem;
+    gap: 6.4rem;
     align-items: center;
     justify-content: center;
     list-style-type: none;  
@@ -178,7 +178,7 @@ header img{
 /*How it work Section */
 
 .section-how{
-    padding: 2rem 0;
+    padding: 2rem;
 }
 
 .how-it-work-text{
