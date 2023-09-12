@@ -59,6 +59,429 @@
 }
 
 
+/* *********************************************** */
+/* MEDIA QUERIES FOR 1000 PX 
+    TABLET
+*/
+/* *********************************************** */
+    @media(max-width:62.5em){
+        html{
+            font-size: 50%;
+        }
+        .hero{
+            /* height: 90vh; */
+            grid-template-columns: 1fr;
+            
+        }
+
+        .hero-text-section,.hero-img-section{
+            text-align: center;
+        }
+
+        .delivered-meals{
+            margin-top: 5rem;
+            margin-bottom: 10rem;
+            justify-content: center;
+        }
+
+        
+        .hero-img{
+            width: 60%;
+        }
+    
+        
+
+        .step-number{
+            font-size: 7.4rem;
+        }
+
+        .how-title{
+            margin-bottom: 2.4rem;
+        }
+
+        .info{
+            margin-bottom: 2.4rem;
+        }
+
+        .testimonial-gallery{
+            grid-template-columns: 1fr;
+        }
+
+        .testimonial-content{
+            margin-left: 0;
+        }
+
+        .testimonial img{
+            width: 15%;
+            border-radius: 100%;
+        }
+
+        .gallery-box{
+            grid-template-columns: repeat(6,1fr);
+            gap: 2rem;
+        }
+
+        .pricing-body {
+            padding: 8.4rem 6.4rem;
+        }
+
+        .card{
+            padding: 4rem 2rem;
+        }
+
+        .special-card::after{
+            top: 6%;
+            right: -17%;
+            font-size: 1.4rem;
+            padding: 1rem 8rem;
+        }
+
+        .cta-content{
+            grid-template-columns: 3fr 2fr;
+        }
+
+        .cta-text-box{
+            padding: 2.4rem 2.4rem 2.4rem 4.8rem;
+        }
+
+        form{
+            grid-template-columns: 1fr;
+        }
+
+        .form-submit{
+            align-self: flex-end;
+            margin-top: 2rem;
+        }
+
+        .cta-img-box{
+            background-position: center;
+        }
+
+        /* Here we are creating a menu icon for navigation items */
+
+
+        .navigation{
+            background-color: rgba(255, 255, 255, 0.906);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* transition: all 0.5s; */
+
+            /* Make the items hidden */
+            opacity: 0%;
+            pointer-events: none;
+            visibility: hidden;
+
+            /* We are adding a animation that slides the nav items from the right of the page 
+                For that we have to move navigation to right
+                Also we need to make overflow-x: hidden
+            */
+
+            /* Animation steps */
+            transform: translateX(100%);
+            
+        }
+
+        /* Make the ul items into flex direction column */
+
+        .main-nav{
+            flex-direction: column;
+            
+           
+        }
+
+        /* initially both button are hidden
+            when we hit the breakpoint menu button should be visible
+        */
+
+        .btn-menu{
+            display: block;
+        }
+
+        .btn-menu ion-icon[name="menu-outline"]{
+            display: block;
+        }
+
+        /* Now nav items are align we have to make it hidden
+            display hidden property is a way to do but it doesnt allow animation
+
+            Another way to make element hidden is a 3 step process
+
+            1) make opactiy 100%
+            2)make pointer events hidden
+            3)make visibility to hidden
+        */
+
+        /* we use trigger class that is the header in this case to switch between 2 buttons 
+            When user click the menu button the menu should be shown so that we use trigger class
+        */
+
+        .trigger .navigation{
+            opacity: 100%;
+            pointer-events: initial;
+            visibility: visible;
+
+            /* When the use click the menu button ie the trigger class is added then 
+                the nav items slides from right of the page
+            */
+            transition: all 0.5s;
+           transform: translateX(0);
+        }
+
+        /* When trigger is on then menu button should not be visible ,only close button should be visible */
+         
+        .trigger .btn-menu>ion-icon[name="close-outline"]{
+            display: block;
+        }
+
+        .trigger .btn-menu>ion-icon[name="menu-outline"]{
+            display: none;
+        }
+
+        
+    }
+
+
+    /* *********************************************** */
+/* MEDIA QUERIES FOR 750 PX 
+    Smaller Tablets
+*/
+/* *********************************************** */
+
+    @media(max-width:46.8em){
+/* 
+        .container{
+            padding: 2rem 0;
+        } */
+
+        .primary-heading{
+            font-size: 3.6rem;
+        }
+
+        .teritory-heading{
+            line-height: 1.4;
+        }
+
+        .grid--col-gap-lg {
+            column-gap: 2rem;
+        }
+        .grid--col-3,.pricing-footer{
+            grid-template-columns: repeat(2,1fr);
+            row-gap: 4.8rem;
+        }
+
+        .pricing-body {
+            padding: 8.4rem 0rem;
+        }
+
+        /* .card{
+            padding: 4rem 0rem;
+        } */
+        .diet{
+            grid-column: 1/ -1;
+            justify-self: center;
+            transform: translateX(10%);
+        }
+
+        /* .special-card::after{
+            top: 5%;
+            right: -28%;
+            font-size: 1.4rem;
+            padding: 1rem 8rem;
+        } */
+
+        .cta-description{
+            font-size: 1.8rem;
+            line-height: 1.6;
+            
+        }
+
+        input,select{
+            width: 100%;
+            font-size:1.6rem;
+           
+        }
+
+        footer{
+            padding-top: 9.6rem;
+            padding-bottom: 2.4rem;
+        }
+
+        .footer{
+            grid-template-columns: repeat(6,1fr);
+            gap: 6.4rem;
+           
+
+        }
+
+        .footer-nav{
+            grid-row: 1;
+            grid-column: span 2;
+        }
+
+        .logo-section,.contact{
+            grid-column: span 3;
+
+            /* justify-self: center;
+            align-self: center; */
+        }
+
+
+        
+    }
+/* *********************************************** */
+    /* MEDIA QUERIES FOR 550 PX 
+   Mobile Phones
+*/
+/* *********************************************** */
+
+@media(max-width:34.3em){
+
+    /* .primary-heading{
+        font-size: 3rem;
+    }
+
+    .secondary-heading{
+        font-size: 2.4rem;
+    }
+
+    .teritory-heading{
+
+    } */
+
+    .grid--col-2,
+    .grid--col-3,
+    .grid--col-4{
+        grid-template-columns: 1fr;
+    }
+
+   
+    .hero{
+        margin: 0 2.4rem;
+    }
+
+    .btn{
+        padding: 1.2rem 1.6rem;
+        
+    }
+
+    .delivered-imgs img{
+        height: 3.6rem;
+        width: 3.6rem;
+        
+    }
+
+    .hero-img{
+        width: 80%;
+    }
+
+    .featured-in{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .pic-1,.pic-3{
+        grid-row: 1;
+    }
+
+    .pic-1,.pic-2,.pic-3{
+        transform: translateY(10%);
+    }
+
+    .step-number{
+        font-size: 6.2rem;
+    }
+
+    .section-meal{
+        padding: 6.4rem 3.2rem;
+    }
+
+    .diet{
+        
+        transform: translateX(-5%);
+    }
+
+    .testimonial-content>p {
+        font-size: 3.6rem;
+        margin-bottom: 6.4rem;
+        line-height: 1.2;
+        
+    }
+
+    .testimonial-content>h2 {
+        font-size: 1.8rem;
+        
+        
+    }
+
+    .gallery-box{
+        grid-template-columns: repeat(4,1fr);
+        gap: 1rem;
+    }
+
+    .testimonial img{
+        width: 25%;
+    }
+
+    .pricing-heading>h1{
+        font-size: 2.8rem;
+        line-height: 1.4;
+    }
+
+    .pricing-heading>h3{
+        font-size: 1.8rem;
+    }
+
+    .pricing-body {
+        padding: 5.4rem 0rem;
+    }
+
+    .grid--col-gap-lg {
+        column-gap: 4.6rem;
+    }
+
+    .disclaimer{
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+
+    .pricing-footer{
+        grid-template-columns: 1fr;
+        gap: 6.4rem;
+    }
+
+    .footer-card{
+        gap: 2.4rem;
+    }
+
+    .cta-content{
+        grid-template-columns: 1fr;
+
+    }
+
+    .cta-img-box{
+        grid-row: 1;
+        height: 32rem;
+    }
+
+    .cta-text-box {
+        padding: 2.4rem 1.8rem 2.4rem 1.8rem;
+    }
+
+    
+
+    
+    
+    
+}
+
+
+
 /*  FONT SIZE SYSTEM (px)
     10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
 

@@ -13,11 +13,12 @@
 </head>
 <body>
     <!-- Header section with logo and nav bar -->
-    <header>
+        <!-- Add trigger class to header for the nav items -->
+    <header class="">  
         <a href="#">
         <img src="img/omnifood-logo.png" alt="Brand-logo" class="brand-logo">
         </a>
-        <nav>
+        <nav class="navigation">
             <ul class="main-nav">
                 <li class="main-nav-list"><a href="#" class="main-nav-link">How it Works</a></li>
                 <li class="main-nav-list"><a href="#" class="main-nav-link">Meals</a></li>
@@ -25,6 +26,10 @@
                 <li class="main-nav-list "><a href="#" class="main-nav-link cta-main-nav">Try for free</a></li>
             </ul>
         </nav>
+        <button class="btn-menu">
+            <ion-icon name="menu-outline"></ion-icon>
+            <ion-icon name="close-outline"></ion-icon>
+        </button>
 
     </header>
     <!-- Hero Section/ Landing page -->
@@ -83,7 +88,7 @@
             <h2 class="secondary-heading">Your daily dose of health in 3 steps</h2>
         </div>
         <!-- step 01 -->
-        <div class="container grid grid--col-2 grid--center-v">
+        <div class="container grid grid--col-2 grid--center-v info">
             <div class="text-box">
                 <p class="step-number">01</p>
                 <h3 class="teritory-heading">Tell us what you like(and what not)</h3>
@@ -91,14 +96,14 @@
                     Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow!
                 </p>
             </div>
-            <div class="img-box">
+            <div class="img-box pic-1">
                 <img src="img/app/app-screen-1.png" alt="image of the app" class="how-img">
             </div>
         </div>
 
     <!-- step 02 -->
-    <div class="container grid grid--col-2 grid--center-v">
-        <div class="img-box">
+    <div class="container grid grid--col-2 grid--center-v info">
+        <div class="img-box pic-2">
             <img src="img/app/app-screen-2.png" alt="image of the app" class="how-img">
         </div>
         <div class="text-box">
@@ -111,7 +116,7 @@
     </div>
 
     <!-- step 03 -->
-    <div class="container grid grid--col-2 grid--center-v">
+    <div class="container grid grid--col-2 grid--center-v info">
         <div class="text-box">
             <p class="step-number">03</p>
             <h3 class="teritory-heading">Receive meals at convenient time</h3>
@@ -119,7 +124,7 @@
                 Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!
             </p>
         </div>
-        <div class="img-box">
+        <div class="img-box pic-3">
             <img src="img/app/app-screen-3.png" alt="image of the app" class="how-img">
         </div>
     </div>
