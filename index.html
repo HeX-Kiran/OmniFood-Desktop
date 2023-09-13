@@ -14,16 +14,16 @@
 <body>
     <!-- Header section with logo and nav bar -->
         <!-- Add trigger class to header for the nav items -->
-    <header class="">  
+    <header>  
         <a href="#">
         <img src="img/omnifood-logo.png" alt="Brand-logo" class="brand-logo">
         </a>
         <nav class="navigation">
             <ul class="main-nav">
-                <li class="main-nav-list"><a href="#" class="main-nav-link">How it Works</a></li>
-                <li class="main-nav-list"><a href="#" class="main-nav-link">Meals</a></li>
-                <li class="main-nav-list"><a href="#" class="main-nav-link">Testimonial</a></li>
-                <li class="main-nav-list "><a href="#" class="main-nav-link cta-main-nav">Try for free</a></li>
+                <li class="main-nav-list"><a href="#how-it-works" class="main-nav-link">How it Works</a></li>
+                <li class="main-nav-list"><a href="#section-meals" class="main-nav-link">Meals</a></li>
+                <li class="main-nav-list"><a href="#testimonial-section" class="main-nav-link">Testimonial</a></li>
+                <li class="main-nav-list "><a href="#try-for-free" class="main-nav-link cta-main-nav">Try for free</a></li>
             </ul>
         </nav>
         <button class="btn-menu">
@@ -41,8 +41,8 @@
                     The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. 
                 </h2>
                 
-                    <a href="#" class="btn btn--1 margin-right-sm">Start eating well</a>
-                    <a href="#" class="btn btn--2">Learn More</a>
+                    <a href="#try-for-free" class="btn btn--1 margin-right-sm">Start eating well</a>
+                    <a href="#how-it-worksl" class="btn btn--2">Learn More</a>
                     <div class="delivered-meals">
                         <div class="delivered-imgs">
                             <img src="img/customers/customer-1.jpg" alt="customer-imgs">
@@ -82,7 +82,7 @@
 
 
     <!-- How it works section -->
-    <section class="section-how">
+    <section class="section-how" id="how-it-works">
         <div class="how-title container">
             <span class="how-it-work-text">How it Works</span>
             <h2 class="secondary-heading">Your daily dose of health in 3 steps</h2>
@@ -130,7 +130,7 @@
     </div>
     </section>
     <!-- Meals Section -->
-    <section class="section-meal">
+    <section class="section-meal" id="section-meals">
         <div class="container">
             <div class="align-center">
                 <span class="section-title">
@@ -201,7 +201,7 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section class="section-testimonial">
+    <section class="section-testimonial" id="testimonial-section">
         <div class="testimonial-gallery">
             <div class="testimonial-content">
                 <h2>Testimonials</h2>
@@ -357,7 +357,7 @@
         </div>
     </section>
 
-    <section class="section-cta">
+    <section class="section-cta" id="try-for-free">
         <div class="container">
             <div class="cta-content">
                 <div class="cta-text-box">
@@ -416,7 +416,7 @@
                 </div>
 
                 <div class="copyright">
-                    <p>Copyright &copy; 2027 by Omnifood,<br>Inc.All right reserved</p>
+                    <p>Copyright &copy; <span class="year">2027</span> by Omnifood,<br>Inc.All right reserved</p>
                 </div>
             </div>
             <div class="contact">
@@ -465,5 +465,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script defer src="javascript/script.js"></script>
 </body>
 </html>
