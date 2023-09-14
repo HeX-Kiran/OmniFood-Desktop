@@ -77,6 +77,20 @@
 /**************************************/
 /*Header Section */
 
+/* Only applied when viewport reaches featured in section */
+.sticky header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 10px;
+    z-index: 1000;
+    padding: 3.6rem 3.2rem;
+    background-color: white;
+    transition: all 0.5s;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 header{
     height: 6.4rem;
     display: flex;
@@ -190,6 +204,7 @@ header img{
 
 .section-how{
     padding: 2rem;
+    
 }
 
 .how-it-work-text{

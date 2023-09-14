@@ -30,6 +30,57 @@ links.forEach((value)=>{
 })
 
 
+//Checking Intersection Observer
+
+// let howEl = document.querySelector(".section-how");
+
+// let howObserver = new IntersectionObserver((entry)=>{
+//   const ent = entry[0];
+//   console.log(ent);
+
+//   if(ent.isIntersecting){
+//     console.log("Intersecting");
+//     document.body.classList.add("observe");
+//   }
+//   else{
+//     document.body.classList.toggle("observe")
+//   }
+// },{
+//   root:null,
+//   threshold:0,
+  
+// });
+
+// howObserver.observe(howEl);
+
+//Adding sticky nav bar when the viewport reaches featured in section
+
+let howEl = document.querySelector(".section-how");
+let heroEl = document.querySelector(".section-hero");
+
+// observer for how it work section (TO ADD STICKY FEATURE)
+let howObserver = new IntersectionObserver((entry)=>{
+  let ent = entry[0];
+
+  if(ent.isIntersecting) document.body.classList.add("sticky");
+  // else document.body.classList.remove("sticky");
+},{
+  
+  threshold:0.4,
+});
+
+// observer for hero section (TO REMOVE STICKY FEACTURE)
+let heroObserver = new IntersectionObserver((entry)=>{
+  let ent = entry[0];
+  if(ent.isIntersecting) document.body.classList.remove("sticky")
+},{
+  threshold:0.2
+})
+
+howObserver.observe(howEl);
+heroObserver.observe(heroEl);
+
+
 
 
 
