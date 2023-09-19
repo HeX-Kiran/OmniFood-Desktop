@@ -1,5 +1,5 @@
 # OmniFood-Desktop
-This is a Static Web Page build using HTML5 and CSS3.
+This is a full responsive static Web Page build using HTML5 and CSS3.
 An 8 section packed page containing
 * Hero Section 
 * Featured In Section
@@ -11,4 +11,4 @@ An 8 section packed page containing
 * Footer Section
 
 
-NOTE:-THE PAGE IS UNDER CONSTRUCTION.
+
